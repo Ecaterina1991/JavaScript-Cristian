@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=Gb8y1yvi4UM
+
 //Comentariu pe o linie
 /*
 Comentarii
@@ -75,7 +77,101 @@ Tipuri de date primitive:
 
 */
 
-const nume = "Ecaterina"; // string
-const age = 29; //number
-const esteMajor = true; //boolean
-let altNume; //undefined
+// const nume = "Ecaterina"; // string
+// const age = 29; //number
+// const esteMajor = true; //boolean
+// let altNume; //undefined
+// const nullValue = null; // null
+
+// console.log(typeof nume);
+// console.log(typeof age);
+// console.log(typeof esteMajor);
+// console.log(typeof altNume);
+// console.log(typeof nullValue);
+//valoarea nula este returnata drept obiect
+
+/*
+let, const si var
+
+let - Ne permite schimbarea valorii variabilei.
+const - caloarea nu poate fi schimbata
+var - metoda veche, ca let. 
+
+1. Accesarea unei variabile definite folosind var va fi permisa si ne va intoarce undefined
+2. Nu putem utiliza let pentru definirea unei variabile intr-un bloc if
+
+*/
+
+// let oras = "Iasi";
+// console.log(oras);
+
+// oras = "Bucuresti";
+// console.log(oras);
+
+//let sau const folosim la inceput cand definim variabila respectiva. ulterior poate fi modificata fara let
+
+/*
+Operatori de baza & Prioritatea operatorilor
+
+-Aritmetici
+-De atribuire
+-De comparatie
+-Logici
+-Conditionali(? - operator ternar)
+-De tip
+
+Operatori aritmetici
+
++ Adaugare
+- Scadere
+* Multiplicare/ Inmultire
+** Putere
+/ Impartire
+% Rest
+++ Incrementare
+-- Decrementare
+
+Operatori de atribuire
+
+= (x = y)
++= (x += y) sau (x = x + y)
+-=
+*=
+/=
+%=
+**=
+
+*/
+
+// let num = 2;
+
+// console.log(num+=1);
+// console.log(num-=1);
+// console.log(num*=2);
+// console.log(num/=2);
+// console.log(num%=2);
+
+// let num2 = 6;
+
+// console.log(num2**=2);
+
+/*
+&& si
+|| sau
+! negatie
+
+
+
+Operatori de tip
+
+typeof - tip de date
+instanceof - returneaza true daca un obiect este o instanta a unui tip de obiect
+
+*/
+
+function Person(nume) {
+  this.nume = nume;
+}
+
+const persoana = new Person("Eca");
+console.log(persoana instanceof Person);
